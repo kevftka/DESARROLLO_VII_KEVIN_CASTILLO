@@ -1,6 +1,5 @@
 <?php
 include 'config.php';
-include 'style.css';
 
 $error = '';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -16,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error = "Nombre de usuario o contraseña incorrectos.";
     }
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <div class="login">
+        <a class="">PARCIAL_3 Inicio de Sesion</a>
         <form method="post">
             <input   type="text" name="username"  placeholder="Usuario" required>
             <input type="password" name="password" placeholder="Contraseña" required>
