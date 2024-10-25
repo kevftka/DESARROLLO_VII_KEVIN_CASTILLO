@@ -1,6 +1,8 @@
 
 <?php
 include 'config.php';
+include 'style.css';
+
 // si no esta autenticada se redigira 
 if (!isset($_SESSION['username'])) {
     header("Location: index.php");
@@ -29,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <title>Tablero</title>
 </head>
-<body>
+<body class="dasboard" >
     <h1>PARCIAL_3 Bienvenvido <?php echo $_SESSION['username']; ?></h1>
     <a href="logout.php">Salir</a>
 

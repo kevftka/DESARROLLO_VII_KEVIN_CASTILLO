@@ -1,5 +1,6 @@
 <?php
 include 'config.php';
+include 'style.css';
 
 $error = '';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -23,9 +24,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <title>Iniciar</title>
 </head>
-<body>
+<body class="login">
     <form method="post">
-        <input type="text" name="username" placeholder="Usuario" required>
+        <input   type="text" name="username"  placeholder="Usuario" required>
         <input type="password" name="password" placeholder="Contraseña" required>
         <button type="submit">Iniciar Sesión</button>
     </form>
