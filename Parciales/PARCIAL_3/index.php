@@ -22,14 +22,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Iniciar</title>
+    <title>PARCIAL_3 </title>
 </head>
-<body class="login">
-    <form method="post">
-        <input   type="text" name="username"  placeholder="Usuario" required>
-        <input type="password" name="password" placeholder="Contraseña" required>
-        <button type="submit">Iniciar Sesión</button>
-    </form>
+<body>
+    <div class="login">
+        <form method="post">
+            <input   type="text" name="username"  placeholder="Usuario" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button class="general-style-button" type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+    
     <?php if ($error) echo "<p>$error</p>"; ?>
 </body>
 </html>

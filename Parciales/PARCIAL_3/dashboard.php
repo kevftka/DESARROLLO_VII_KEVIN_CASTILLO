@@ -33,21 +33,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body class="dasboard" >
     <h1>PARCIAL_3 Bienvenvido <?php echo $_SESSION['username']; ?></h1>
-    <a href="logout.php">Salir</a>
-
-    <h2>Tareas</h2>
-    <ul>
-        <?php foreach ($_SESSION['tasks'] as $task): ?>
-            <li><?php echo $task['title'] . " - " . $task['due_date']; ?></li>
-        <?php endforeach; ?>
-    </ul>
-
-    <h2>Agregar </h2>
-    <form method="post">
-        <input type="text" name="title" placeholder="Título de la tarea" required>
-        <input type="date" name="due_date" required>
-        <button type="submit">Guardar</button>
-    </form>
+    
+    <button class="general-style-button">
+        <a  href="logout.php">Salir</a>
+    </button>
+    <div class="task">
+        <h2>Tareas</h2>
+        <ul>
+            <?php foreach ($_SESSION['tasks'] as $task): ?>
+                <li><?php echo $task['title'] . " - " . $task['due_date']; ?></li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+    
+    <div class="task">
+        <h2>Agregar </h2>
+        <form method="post">
+            <input type="text" name="title" placeholder="Título de la tarea" required>
+            <input type="date" name="due_date" required>
+            <button type="submit">subir</button>
+        </form>    
+    </div>        
+    
     <?php if ($error) echo "<p>$error</p>"; ?>
 </body>
 </html>
