@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'config.php';
+include '.config.php';
 include 'db_connection.php';
 
 if (isset($_GET['code'])) {

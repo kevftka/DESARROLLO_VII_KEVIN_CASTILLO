@@ -1,5 +1,6 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 define('CLIENT_ID', '');
 define('CLIENT_SECRET', '');
 define('REDIRECT_URI', 'http://localhost/PARCIALES/PARCIAL_4/callback.php');
@@ -10,3 +11,9 @@ define('CLIENT_SECRET', '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');
 define('REDIRECT_URI', 'http://localhost/PARCIALES/PARCIAL_4/callback.php');
 ?>
 >>>>>>> 71081da (update repo)
+=======
+define('CLIENT_ID', '');
+define('CLIENT_SECRET', '');
+define('REDIRECT_URI', 'http://localhost/PARCIALES/PARCIAL_4/callback.php');
+?>
+>>>>>>> 1a9bf40 (parcial4)
