@@ -1,0 +1,175 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('libreria\ verde.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgb(255, 255, 255); /* Fondo semitransparente para mejorar la legibilidad */
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+}
+/* Estilo del texto */
+h2 {
+    color: rgb(69, 69, 69);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo del botón */
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Títulos */
+h2, h3 {
+    color: #555555;
+    text-align: center;
+}
+
+/* Formularios y entradas */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #555555;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Enlace de Google */
+a.google-login {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #4285F4;
+    text-decoration: none;
+}
+
+a.google-login:hover {
+    text-decoration: underline;
+}
+
+/* Mensajes de error */
+.error {
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Libros */
+.book {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.book img {
+    max-width: 50px;
+    margin-right: 15px;
+}
+
+.book-info {
+    flex: 1;
+}
+
+/* Contenedor del botón centrado */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    height: 100vh;
+}
+
+/* Fondo degradado del botón */
+.button-container {
+    background: linear-gradient(to bottom, rgba(31, 41, 55, 0.4), transparent);
+    padding: 4px;
+    border-radius: 16px;
+}
+
+/* Botón principal */
+.button {
+    padding: 4px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #374151, #4B5563);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.button:active {
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.8);
+    transform: scale(0.995);
+}
+
+/* Contenedor interior del botón */
+.button-inner {
+    background: linear-gradient(to bottom, #4B5563, #374151);
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+/* Texto del botón */
+.button-text {
+    font-weight: 600;
+    color: white;
+}
+
+.button svg {
+    height: 24px;
+}
+
+.button:hover {
+    transform: scale(1.02);
+}
